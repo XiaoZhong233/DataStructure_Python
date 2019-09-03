@@ -125,3 +125,4 @@ if __name__ == '__main__':
     BinTNode.midorder_nonrec(t, visit)
     print("\n非递归后序遍历")
     BinTNode.lastorder_nonrec(t, visit)
+    pass
