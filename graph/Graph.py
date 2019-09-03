@@ -98,5 +98,3 @@ class GraphAL(Graph):
         if self._invalid(vi):
             raise GraphError("顶点不合法")
         return self._mat[vi]
-
-
