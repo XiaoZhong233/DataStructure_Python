@@ -1,10 +1,11 @@
+# 交换数据元素
 def swap(tree, i, j):
     temp = tree[i]
     tree[i] = tree[j]
     tree[j] = temp
 
 
-# 调整堆
+# 调整堆，调整为大根堆
 def heapify(tree, i):
     if i >= len(tree):
         return
