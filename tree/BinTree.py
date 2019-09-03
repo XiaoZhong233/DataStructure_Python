@@ -42,3 +42,4 @@ if __name__ == '__main__':
     t.set_root(root)
     for data in t.preorder_elements():
         print(data)
+    pass
