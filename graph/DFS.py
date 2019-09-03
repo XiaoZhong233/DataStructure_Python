@@ -8,7 +8,6 @@ graph = {
     "F": ["D"]
 }
 
-
 def DFS(graph, s):
     stack = [s]
     seen = set()
