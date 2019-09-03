@@ -9,7 +9,6 @@ graph = {
 }
 
 
-# ![20190825160305](https://zhong-blog.oss-cn-shenzhen.aliyuncs.com/blog/20190825160305.png!blog)
 def BFS(graph, s):
     queue = [s]
     seen = set(s)
