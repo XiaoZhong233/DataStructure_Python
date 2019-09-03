@@ -1,6 +1,7 @@
 import tree.BTNode as BinTNode
 
 
+# 字典的entry集
 class Assoc:
     def __init__(self, key, value):
         self._key = key
@@ -57,7 +58,7 @@ class DictBST:
                 entry.setValue(value)
                 return
 
-    # 中序遍历
+    # 返回中序遍历值的迭代器
     def values(self):
         t, s = self._root, []
         while t is not None or s:
@@ -68,7 +69,7 @@ class DictBST:
             yield t.data.value()
             t = t.right
 
-    # 中序
+    # 返回中序遍历entry的迭代器
     def entries(self):
         t, s = self._root, []
         while t is not None or s:
@@ -79,6 +80,7 @@ class DictBST:
             yield t.data.key(), t.data.value()
             t = t.right
 
+    # 删除排序二叉树的某一结点
     def delete(self, key):
         bt = self._root
         f = None  # f为关键字节点的双亲节点
@@ -126,13 +128,15 @@ class DictBST:
         return True
         pass
 
+    # 中序打印二叉树的值
     def printValues(self):
         for v in dbst.values():
             print(v, end=" ")
 
+    # 中序打印二叉树的entry
     def print(self):
         for k, v in self.entries():
-            print("("+str(k), str(v)+")", end=" ")
+            print("(" + str(k), str(v) + ")", end=" ")
 
 
 if __name__ == '__main__':
