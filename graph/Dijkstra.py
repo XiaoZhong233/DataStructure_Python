@@ -1,6 +1,5 @@
 import heapq
 import math
-
 # 构造数据,邻接表
 graph = {
     "A": {"B": 5, "C": 1},
