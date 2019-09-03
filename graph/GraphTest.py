@@ -178,7 +178,6 @@ class TestGraph(unittest.TestCase):
         else:
             print(result)
 
-
         gd = graphdi.GraphDI(TestGraph.data7)
         result = gd.topological_sort()
         courseResult = []
