@@ -17,7 +17,7 @@ class GraphDI:
 
     def add_vertex(self, vertex):
         if self._invalid(vertex):
-            raise GraphError("添加顶点失败，已经有该顶点")
+            raise GraphError("添加顶点失败，已经有该顶点。")
         self._graph[vertex] = {}
         self._vnum += 1
 
