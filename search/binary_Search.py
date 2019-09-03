@@ -1,3 +1,4 @@
+# 二分查找
 def binary_search(data, key):
     low = 0
     high = len(data) - 1
@@ -12,7 +13,7 @@ def binary_search(data, key):
         pass
     return -1
 
-
+# 二分查找（递归）
 def binary_search2(data, key):
     if not data or not key:
         return False
