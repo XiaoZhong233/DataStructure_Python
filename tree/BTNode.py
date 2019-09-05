@@ -8,7 +8,7 @@ class BinTNode:
         self.right = right
 
     def __str__(self):
-        return "data:%s,left:%s,right:%s" % (self.data, self.left.data, self.right.data)
+        return "data:%s,left:%s,right:%s" % (str(self.data), str(self.left.data), str(self.right.data))
 
     @staticmethod
     def count_BinTNodes(t):
