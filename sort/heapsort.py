@@ -1,3 +1,4 @@
+# coding:utf-8
 # 交换数据元素
 def swap(tree, i, j):
     temp = tree[i]
