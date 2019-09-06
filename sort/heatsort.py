@@ -29,7 +29,7 @@ def build_heap(tree):
         heapify(tree, i)
 
 
-# 堆排序
+# 堆排序.大根堆，降序
 def heap_sort(tree):
     build_heap(tree)
     result = []
@@ -46,5 +46,12 @@ if __name__ == "__main__":
     print("原始数据：")
     print(tree)
     result = heap_sort(tree)
-    print("\n堆排序：")
+    print("堆排序：")
+    print(result)
+
+    tree = [345, 312, 65, 765, 143, 564]
+    print("原始数据：")
+    print(tree)
+    result = heap_sort(tree)
+    print("堆排序：")
     print(result)
