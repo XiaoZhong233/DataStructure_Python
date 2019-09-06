@@ -85,6 +85,7 @@ if __name__ == "__main__":
     print("大根堆排序：")
     print(result)
 
+    # 小根堆测试用例
     tree = [345, 312, 65, 765, 143, 564]
     print("原始数据：")
     print(tree)
