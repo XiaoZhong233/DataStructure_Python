@@ -1,5 +1,5 @@
 # DataStructure_Python
-基于Python的数据结构算法实现，随缘更新 \n
+基于Python的数据结构算法实现，随缘更新 
 
 拉取
 ```
