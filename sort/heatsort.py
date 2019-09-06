@@ -43,6 +43,7 @@ def heap_sort(tree):
 
 if __name__ == "__main__":
     tree = [2, 5, 3, 1, 10, 4]
+
     print("原始数据：")
     print(tree)
     result = heap_sort(tree)
