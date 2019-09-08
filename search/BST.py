@@ -131,7 +131,7 @@ class DictBST:
 
     # 中序打印二叉树的值
     def printValues(self):
-        for v in dbst.values():
+        for v in self.values():
             print(v, end=" ")
 
     # 中序打印二叉树的entry
