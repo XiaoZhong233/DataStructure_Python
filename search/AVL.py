@@ -142,6 +142,6 @@ if __name__ == '__main__':
     tree.insert(81, "81")
     tree.insert(63, "63")
     tree.insert(60, "60")
-
-    tree.print()
+    print("中序遍历")
+    tree.printValues()
     pass
