@@ -1,5 +1,5 @@
 import tree.BTNode as BinTNode
-
+import tool.TimeCalculator as time
 
 # 字典的entry集
 class Assoc:
@@ -25,6 +25,7 @@ class DictBST:
     def is_empty(self):
         return self._root is None
 
+    @time.display_time
     def search(self, key):
         bt = self._root
         while bt is not None:
