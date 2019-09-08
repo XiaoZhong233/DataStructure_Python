@@ -1,5 +1,7 @@
 # coding=utf-8
 import tool.TimeCalculator as time
+import random
+
 
 class Hash:
     def __init__(self, size):
@@ -40,7 +42,7 @@ class Hash:
                 print("元素%s插入冲突，尝试插入第%s位" % (key, hashCode_next))
                 if self.hashSet[hashCode_next] is None:
                     self.hashSet[hashCode_next] = key
-                    break
+                    return hashCode_next
             print("HASH表已满，无法插入元素%s" % key)
             return -1
 
@@ -48,16 +50,21 @@ class Hash:
         print(self.hashSet)
 
 
-if __name__ == '__main__':
-    hash = Hash(10)
-    for i in range(11):
-        hash.insert(i)
+@time.display_time
+def insertTest(hash):
+    for i in range(hash.size):
+        hash.insert(random.randint(0, 20))
     hash.printHashSet()
+
+
+if __name__ == '__main__':
+    hash = Hash(20)
+    insertTest(hash)
 
     print()
     print("查找key=9的位置")
     print("index=%s" % hash.search(9))
 
     print()
-    print("\n查找key=10的位置")
-    print("index=%s" % hash.search(10))
+    print("\n查找key=5的位置")
+    print("index=%s" % hash.search(5))
