@@ -15,7 +15,7 @@ def generate_data(n):
 # 时间在10s以内
 # 空间占用小于1MB
 @TimeCalculator.display_time
-def vertorsort(data, n=1000000):
+def vertorsort(data, n = 1000000):
     bitset = BitSet.BitSet(n)
     # 初始化位图
     for i in data:
@@ -35,3 +35,5 @@ if __name__ == '__main__':
     data = generate_data(1000000)
     result = vertorsort(data, len(data))
     print(result)
+    # data.sort()
+    # print(data)
