@@ -6,7 +6,7 @@ def display_time(func):
         t1 = time.perf_counter()
         result = func(*args)
         t2 = time.perf_counter()
-        print("Total time: {:.4} ms".format((t2 - t1) * 1000))
+        print("Total time: {:} ms".format((t2 - t1) * 1000))
         return result
 
     return wrapper
