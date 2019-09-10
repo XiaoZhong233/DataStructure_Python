@@ -45,8 +45,11 @@ def vertorsort(data, n=1000000):
 
 
 if __name__ == '__main__':
-    # wirte_data2(10**6)
+    # 模拟100万个100万内的数据
+    wirte_data2(10**6)
+    # 模拟从磁盘中读取数据
     data = load_data2()
+    # 模拟向I/O输出排序结果
     result = vertorsort(data, 10**6)
     np.savetxt('./datasort.txt', X=result, fmt="%d",delimiter=" ", newline = " ")
     # print(result)
