@@ -107,4 +107,3 @@ if __name__ == '__main__':
     testQuicksort(10 ** 4)
     testQuicksort2(10 ** 4)
     testQuicksort3(10 ** 4)
-    print("非递归快排最好")
