@@ -10,14 +10,27 @@ import numpy as np
 def generate_data(n):
     return np.random.randint(low=0, high=n, size=n)
 
+# 写成txt文件
+def wirte_data(n):
+    data = generate_data(n)
+    np.savetxt('./data.txt', X=data, fmt="%d",delimiter=" ", newline = " ")
+
+# 写成二进制文件
+def wirte_data2(n):
+    data = generate_data(n)
+    np.save(file ='./data', arr = data, )
+
+def load_data2(file = './data.npy'):
+    return np.load(file)
+
 
 # 对n（n<=1000000）个小于n的正整数序列进行排序
 # 时间在10s以内
 # 空间占用小于1MB
 @TimeCalculator.display_time
-def vertorsort(data, n = 1000000):
+def vertorsort(data, n=1000000):
     bitset = BitSet.BitSet(n)
-    # 初始化位图
+    # 初始化位图,模拟从I/O读入数据
     for i in data:
         bitset.set(i)
     result = []
@@ -32,8 +45,6 @@ def vertorsort(data, n = 1000000):
 
 
 if __name__ == '__main__':
-    data = generate_data(1000000)
-    result = vertorsort(data, len(data))
-    print(result)
-    # data.sort()
-    # print(data)
+    data = generate_data(10**7)
+    result = vertorsort(data, 10**7)
+    # print(result)
