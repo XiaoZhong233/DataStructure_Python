@@ -34,7 +34,7 @@ def vertorsort(data, n=1000000):
     for i in data:
         bitset.set(i)
     result = []
-    # 输出位图排序结果
+    # 输出位图排序结果,模拟向I/0写入数据
     print("空间大小占用:")
     print(str(sys.getsizeof(bitset)) + "Byte")
     for i in range(bitset.size()):
@@ -45,6 +45,8 @@ def vertorsort(data, n=1000000):
 
 
 if __name__ == '__main__':
-    data = generate_data(10**7)
-    result = vertorsort(data, 10**7)
+    # wirte_data2(10**6)
+    data = load_data2()
+    result = vertorsort(data, 10**6)
+    np.savetxt('./datasort.txt', X=result, fmt="%d",delimiter=" ", newline = " ")
     # print(result)
