@@ -104,7 +104,7 @@ def testQuicksort3(n):
 
 
 if __name__ == '__main__':
-    testQuicksort(10 ** 4)
-    testQuicksort2(10 ** 4)
-    testQuicksort3(10 ** 4)
+    # testQuicksort(10 ** 4)
+    # testQuicksort2(10 ** 4)
+    testQuicksort3(10 ** 7)
     print("非递归快排最好")
