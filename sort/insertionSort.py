@@ -1,4 +1,5 @@
 # coding:utf-8
+# 一趟插入排序
 def insert(arr, n):
     key = arr[n]
     i = n
@@ -12,6 +13,7 @@ def insert(arr, n):
 
 
 def insertionSort(arr):
+    # 从第二个元素开始插入排序
     for i in range(1, len(arr), 1):
         insert(arr, i)
 
